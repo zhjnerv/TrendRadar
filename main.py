@@ -2456,7 +2456,7 @@ class NewsAnalyzer:
             ("_36kr", "36刻"),
             "hackernews",
             "producthunt",
-            "zaobao",
+            ("zaobao", "联合早报"),
         ]
 
         print(f"开始爬取数据，请求间隔 {self.request_interval} 毫秒")
