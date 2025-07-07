@@ -2392,6 +2392,7 @@ class NewsAnalyzer:
             CONFIG["ENABLE_NOTIFICATION"]
             and has_webhook
             and self.report_type in ["daily", "both"]
+            and stats
         ):
             ReportGenerator.send_to_webhooks(
                 stats,
@@ -2507,6 +2508,7 @@ class NewsAnalyzer:
             CONFIG["ENABLE_NOTIFICATION"]
             and has_webhook
             and self.report_type in ["current", "both"]
+            and stats
         ):
             ReportGenerator.send_to_webhooks(
                 stats,
